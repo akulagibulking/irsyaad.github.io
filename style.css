@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111213;
+    color: #111213;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styling untuk Navbar */
+.navbar {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111213;
+    color: #111213;
+    padding: 15px 0;
+    margin-bottom: 0;
+    transition: ease-in-out;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar .menu li {
+    margin-left: 20px;
+}
+
+.navbar .menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+.navbar .menu li a:hover {
+    background-color: #111213;
+}
+
+.navbar button {
+    border: 3px solid #800080;
+    height: 40px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+.navbar button a {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    font-family: Montserrat;
+}
+
+/* Styling untuk Body Content */
+.body-content {
+    padding: 5px 0;
+    background-color: #111213;
+}
+
+.body-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.body-content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 40px;
+    height: 400px;
+    margin-bottom: 30px;
+    margin: 0;
+    background-color: #1f2223;
+    transition: ease-in-out;
+}
+
+.welcome-text {
+    flex: 1;
+    padding: 5px;
+    padding-right: 100px;
+    margin-left: 50px;
+    font-family: Montserrat;
+}
+
+.welcome-text .greet {
+    color: #12ff11;
+    font-size: 5rem;
+    padding-bottom: 10px;
+    transition: ease-in-out;
+}
+
+.welcome-text .object {
+    color: #9f00e0;
+    font-size: 4rem;
+    padding-top: 5px;
+    margin-top: 0;
+    transition: ease-in-out;
+}
+.welcome-text h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+    transition: ease-in-out;
+}
+
+.img {
+    flex: 1;
+    max-width: 300px;
+    margin-right: 30px;
+    align-items: center;
+    text-align: center;
+    font-family: Poppins;
+}
+
+.img img {
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+}
+
+.img h3 {
+    color: white;
+    margin-bottom: 0;
+}
+
+.img p {
+    color: white;
+    margin-top: 0;
+}
+
+.about {
+    padding: 30px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.about h2 {
+    font-family: Montserrat;
+    font-size: 3rem;
+    color: #ff9900;
+}
+
+.about p {
+    font-family: Poppins;
+    color: white;
+}
+
+.edu {
+    height: 500px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.edu h2 {
+    color: #12ff11;
+    font-family: Montserrat;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.edu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    padding: 50px;
+    margin: 0 100px;
+}
+
+.card {
+    background-color: #1f2223;
+    height: 200px;
+    width: 120px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Efek bayangan awal */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animasi transisi */
+    cursor: pointer; /* Memberikan indikasi bisa diinteraksi */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Mengangkat card sedikit ke atas */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Efek bayangan lebih kuat saat hover */
+}
+
+.card span {
+    color: #800080;
+}
+
+.card h3 {
+    color: white;
+}
+
+.card p {
+    color: #ff9900;
+}
+
+.skill {
+    align-items: center;
+    margin-left: 100px;
+}
+
+.title-skill h2 {
+    text-align: center;
+    color: #9f00e0;
+    font-family: Montserrat;
+    font-size: 3rem;
+}
+
+.skill p {
+    color: white;
+}
+
+.bar {
+    width: 40%;
+    background-color: #ddd;
+    border-radius: 50px 50px;
+    align-items: center;
+  }
+  
+  .skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    align-items: center;
+  }
+  
+  .web {width: 95%; align-items: center; border-radius: 50px 50px; height: 20px; background-color: #12ff11;}
+  .tim {width: 95%; align-items: center; border-radius: 50px 50px; height: 20px; background-color: #12ff11;}
+  .indonesia {width: 100%; align-items: center; border-radius: 50px 50px; height: 20px; background-color: #12ff11;}
+  .inggris {width: 45%; align-items: center; border-radius: 50px 50px; height: 20px; background-color: #12ff11;}
+
+  .exp-card {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    width: 800px;
+    border-radius: 50px;
+    background-color: #1f2223;
+    margin-left: 30px;
+    margin-top: 100px;
+  }
+
+  .exp-card h2 {
+    font-size: 3rem;
+    font-family: Montserrat;
+    color: #12ff11;
+  }
+
+  .exp p {
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  @media screen and (min-width:601px) and (max-width: 992px) {
+
+    body {
+        font-family: Poppins, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #111213;
+        color: #111213;
+    }
+
+    .welcome-text {
+        flex: 1;
+        padding: 5px;
+        padding-right: 50px;
+        margin-left: 30px;
+        font-family: Montserrat;
+    }
+    
+    .welcome-text .greet {
+        color: #12ff11;
+        font-size: 2rem;
+        padding-bottom: 10px;
+        transition: ease-in-out;
+    }
+    
+    .welcome-text .object {
+        color: #9f00e0;
+        font-size: 2rem;
+        padding-top: 5px;
+        margin-top: 0;
+        transition: ease-in-out;
+    }
+    .welcome-text h1 {
+        font-size: 2rem;
+        margin-bottom: 0;
+        transition: ease-in-out;
+    }
+    
+    .img {
+        flex: 1;
+        max-width: 100px;
+        margin-right: 30px;
+        align-items: center;
+        text-align: center;
+        font-family: Poppins;
+    }
+    
+    .img img {
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+    }
+    
+    .img h3 {
+        color: white;
+        margin-bottom: 0;
+        font-size: 1rem;
+    }
+    
+    .img p {
+        color: white;
+        margin-top: 0;
+    }
+  }
+
+  .edu {
+    height: 500px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.edu h2 {
+    color: #12ff11;
+    font-family: Montserrat;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.edu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    padding: 50px;
+    margin: 0 10px;
+}
+
+.card {
+    background-color: #1f2223;
+    height: 200px;
+    width: 120px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Efek bayangan awal */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animasi transisi */
+    cursor: pointer; /* Memberikan indikasi bisa diinteraksi */
+}
+
+.skill {
+    align-items: center;
+    margin-left: 240px;
+}
+
+.exp-card {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 550px;
+    border-radius: 50px;
+    background-color: #1f2223;
+    margin-top: 100px;
+  }
+
+  .exp-card h2 {
+    font-size: 3rem;
+    font-family: Montserrat;
+    color: #12ff11;
+    text-align: center;
+  }
+
+  .exp p {
+    font-family: Montserrat;
+    font-size: 1rem;
+    color: white;
+  }
+
+  .exp video {
+    width: 50%;
+    border-radius: 20px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .welcome-text {
+        flex: 1;
+        padding: 5px;
+        padding-right: 50px;
+        margin-left: 30px;
+        font-family: Montserrat;
+    }
+    
+    .welcome-text .greet {
+        color: #12ff11;
+        font-size: 2rem;
+        padding-bottom: 10px;
+        transition: ease-in-out;
+    }
+    
+    .welcome-text .object {
+        color: #9f00e0;
+        font-size: 2rem;
+        padding-top: 5px;
+        margin-top: 0;
+        transition: ease-in-out;
+    }
+    .welcome-text h1 {
+        font-size: 2rem;
+        margin-bottom: 0;
+        transition: ease-in-out;
+    }
+    
+    .img {
+        flex: 1;
+        max-width: 100px;
+        margin-right: 30px;
+        align-items: center;
+        text-align: center;
+        font-family: Poppins;
+    }
+    
+    .img img {
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+    }
+    
+    .img h3 {
+        color: white;
+        margin-bottom: 0;
+        font-size: 1rem;
+    }
+    
+    .img p {
+        color: white;
+        margin-top: 0;
+    }
+  }
+
+    .edu h2 {
+        color: #12ff11;
+        font-family: Montserrat;
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+    
+    .edu-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+        padding: 10px;
+        margin: 0 10px;
+    }
+    
+    .card {
+        background-color: #1f2223;
+        height: 200px;
+        width: 100px;
+        border-radius: 20px;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        margin: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Efek bayangan awal */
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animasi transisi */
+        cursor: pointer; /* Memberikan indikasi bisa diinteraksi */
+    }
+  
+
+  .skill {
+    align-items: center;
+    margin-left: 170px;
+}
+
+.exp-card {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+    height: ;
+    border-radius: 50px;
+    background-color: #1f2223;
+    margin-top: 100px;
+  }
+
+  .exp-card h2 {
+    font-size: 2rem;
+    font-family: Montserrat;
+    color: #12ff11;
+    text-align: center;
+  }
+
+
+  .exp p {
+    font-family: Montserrat;
+    font-size: 1rem;
+    color: white;
+  }
+
+  .exp video {
+    width: 50%;
+    border-radius: 20px;
+  }
